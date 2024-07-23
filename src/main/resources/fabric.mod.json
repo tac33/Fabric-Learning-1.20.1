@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "learning-example",
+	"version": "${version}",
+	"name": "Learning Example",
+	"description": "This is an example mod to learn how to mod Minecraft.",
+	"authors": [
+		"cosmic_knife"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/learning-example/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.tac33.learningexample.LearningExample"
+		],
+		"client": [
+			"com.tac33.learningexample.LearningExampleClient"
+		],
+		"fabric-datagen": [
+			"com.tac33.learningexample.LearningExampleDataGenerator"
+		]
+	},
+	"mixins": [
+		"learning-example.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
