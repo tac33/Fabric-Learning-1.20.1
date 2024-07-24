@@ -35,7 +35,7 @@ public class ModItems {
     /*
         Method to register custom modded Items
      */
-    public static void RegisterModItems(){
+    public static void registerModItems(){
         LearningExample.LOGGER.info("Registering Mod Items for " + LearningExample.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);

@@ -1,6 +1,7 @@
 package com.tac33.learningexample.item;
 
 import com.tac33.learningexample.LearningExample;
+import com.tac33.learningexample.blocks.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -19,10 +20,13 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
+
+                        entries.add(ModBlocks.RUBY_BLOCK);
+                        entries.add(ModBlocks.RAW_RUBY_BLOCK);
                     }).build());
 
 
-    public static void RegisterItemGroups() {
+    public static void registerItemGroups() {
         LearningExample.LOGGER.info("Registering Item Groups for " + LearningExample.MOD_ID);
     }
 }

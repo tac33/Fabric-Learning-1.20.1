@@ -2,5 +2,8 @@
   "item.learningexample.ruby": "Ruby",
   "item.learningexample.raw_ruby": "Raw Ruby",
 
+  "block.learningexample.ruby_block": "Ruby Block",
+  "block.learningexample.raw_ruby_block": "Raw Ruby Block",
+
   "itemgroup.ruby": "Ruby Group"
 }
