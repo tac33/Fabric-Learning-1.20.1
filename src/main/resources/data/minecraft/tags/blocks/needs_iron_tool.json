@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "learningexample:raw_ruby_block",
+    "learningexample:ruby_ore",
+    "learningexample:deepslate_ruby_ore",
+    "learningexample:nether_ruby_ore"
+  ]
+}
