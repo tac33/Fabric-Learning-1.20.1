@@ -1,6 +1,7 @@
 package com.tac33.learningexample.blocks;
 
 import com.tac33.learningexample.LearningExample;
+import com.tac33.learningexample.blocks.custom.SoundBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -24,10 +25,13 @@ public class ModBlocks {
     public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.ANVIL)));
 
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f), UniformIntProvider.create(3, 7)));
     public static final Block DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f), UniformIntProvider.create(3, 7)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(3.5f), UniformIntProvider.create(3, 7)));
     public static final Block NETHER_RUBY_ORE = registerBlock("nether_ruby_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.5f), UniformIntProvider.create(3, 7)));
     public static final Block END_STONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
